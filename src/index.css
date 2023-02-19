@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* styling for main which allows footer to stay at the bottom of the page using css calc function for viewport height */
+
+main {
+  min-height: calc(100vh - 88px - 40px - 56px);
+}
+
+@media screen and (max-width: 576px) {
+  main {
+    min-height: calc(100vh - 88px - 64px - 56px);
+  }
+}
+
+
+
