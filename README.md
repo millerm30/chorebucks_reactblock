@@ -32,11 +32,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm run eject`
 
-## Demo Site
-
-- [Github Pages](https://millerm30.github.io/chore-bucks)
-
-
 ## Authors
 
 - [@millerm30](https://www.github.com/millerm30)
