@@ -1,12 +1,35 @@
+name: Deploy
+
 on:
   push:
-    branches:
-      - 'main'
- 
+    branches: [ main ]
+
 jobs:
-  build-deploy:
+  deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: https://millerm30.hithub.io/chorebucks_reactblock
+    permissions:
+      pages: write
+      id-token: write
     steps:
-    - id: build-publish
-      uses: bitovi/github-actions-react-to-ghp@v1.1.1
-        path: /build
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+      - name: install dependencies
+        run: npm ci
+      - name: build app
+        run: npm run build
+        env:
+          PUBLIC_URL: /game
+      - name: upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./build
+      - name: deploy to github pages
+        id: deployment
+        uses: actions/deploy-pages@v1
