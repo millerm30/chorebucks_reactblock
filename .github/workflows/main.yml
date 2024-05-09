@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: https://millerm30.hithub.io/chorebucks_reactblock
+      url: https://millerm30.github.io/chorebucks_reactblock
     permissions:
       pages: write
       id-token: write
