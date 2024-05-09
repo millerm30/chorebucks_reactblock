@@ -38,7 +38,7 @@ const Router = () => {
   
   return(
   <App points={points} addPoints={addPoints} removePoints={removePoints}>
-    <BrowserRouter basename="/chore-bucks">
+    <BrowserRouter basename="/chorebucks_reactblock">
       <Routes>
         {isLoggedIn ? (
         <Route path="/" element={<Layout points={points}/>}>
