@@ -1,6 +1,6 @@
 import React from "react";
 import Wishadd from "./Wishadd";
-import { GoTrashcan } from "react-icons/go";
+import { FaTrashAlt } from "react-icons/fa";
 import { useWishes } from "../contexts/Wishes";
 import Card from "./Card";
 import { motion } from "framer-motion";
@@ -24,7 +24,7 @@ const WishList = () => {
       {
         <section className={style.section}>
           {wishes.map((wish) => (
-            <Card key={wish.id} title={wish.title} points={wish.points} style={wish.style} remove={<GoTrashcan onClick={() => removeWish(wish)}/>}>
+            <Card key={wish.id} title={wish.title} points={wish.points} style={wish.style} remove={<FaTrashAlt onClick={() => removeWish(wish)}/>}>
                 <motion.button
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}

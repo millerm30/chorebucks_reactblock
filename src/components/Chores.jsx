@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useChores } from "../contexts/Chores";
-import { GoTrashcan } from "react-icons/go";
+import { FaTrashAlt } from "react-icons/fa";
 import Card from "./Card";
 import { Outlet } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -64,7 +64,7 @@ const Chores = () => {
                 style={chore.style}
                 title={chore.title}
                 points={chore.points}
-                remove={<GoTrashcan onClick={() => removeChore(chore)} />}
+                remove={<FaTrashAlt onClick={() => removeChore(chore)} />}
               >
                 <motion.button
                   whileHover={{ scale: 1.1 }}

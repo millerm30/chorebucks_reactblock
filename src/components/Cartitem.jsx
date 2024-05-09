@@ -1,5 +1,5 @@
 import React from "react";
-import { GoTrashcan } from "react-icons/go";
+import { FaTrashAlt } from "react-icons/fa";
 
 export const CartItem = ({ wish, removeFromCartHandler, updateCartItem }) => {
 
@@ -25,7 +25,7 @@ export const CartItem = ({ wish, removeFromCartHandler, updateCartItem }) => {
           onClick={() => removeFromCartHandler(wish)}
           className={style.button}
         >
-          <GoTrashcan />
+          <FaTrashAlt />
         </button>
       </span>
       <span className={style.spanBoxTwo}>
