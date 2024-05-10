@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaTwitter, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const style = {
   footerContainer: `w-full h-14`,
@@ -19,9 +19,6 @@ const Footer = () => {
             <span>&copy;2022, Designed By Michael Miller</span>
           </div>
           <div className={style.socialDivider}>
-            <a href="http://www.facebook.com/millerm30" target="_blank" rel="noopener noreferrer"><FaFacebook className={style.socialIcon} /></a>
-            <a href="http://www.twitter.com/millerm30" target="_blank" rel="noopener noreferrer"><FaTwitter className={style.socialIcon} /></a>
-            <a href="http://www.instagram.com/millergm302022" target="_blank" rel="noopener noreferrer"><FaInstagram className={style.socialIcon} /></a>
             <a href="http://linkedin.com/in/michael-miller-0aa2bb229" target="_blank" rel="noopener noreferrer"><FaLinkedin className={style.socialIcon} /></a>
             <a href="http://www.github.com/millerm30" target="_blank" rel="noopener noreferrer"><FaGithub className={style.socialIcon} /></a>
           </div>
